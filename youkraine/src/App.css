@@ -1,0 +1,155 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #090941;
+  color: white;
+}
+
+.container {
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.display-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.display-image-one {
+  max-height: 320px;
+  position: absolute;
+  border-radius: 32px;
+}
+
+.display-image-two {
+  max-height: 320px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 200px;
+  border-radius: 32px;
+}
+
+.mint-section {
+  flex: 1;
+  padding: 15px;
+}
+
+.minter {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.mint-area {
+  display: flex;
+  gap: 80px;
+  margin-left: 80px;
+}
+
+.mint-button {
+  background-color: transparent;
+  border: 1px solid #2081e2;
+  color: white;
+  height: 40px;
+  width: 150px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.mint-button:hover {
+  background-color: #2081e2;
+}
+
+@media only screen and (max-width: 1500px) {
+  .minter {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .minter {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+  }
+
+  .display-image-one {
+    max-height: 290px;
+    margin-left: -100px;
+  }
+
+  .display-image-two {
+    max-height: 290px;
+    margin-left: 100px;
+  }
+
+  .mint-area {
+    gap: 60px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .display-image-one {
+    max-height: 250px;
+  }
+
+  .display-image-two {
+    max-height: 250px;
+  }
+
+  .minter {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .App {
+    height: auto;
+  }
+  .display-image-one {
+    max-height: 230px;
+  }
+
+  .display-image-two {
+    max-height: 230px;
+  }
+
+  .minter {
+    width: 350px;
+  }
+
+  .mint-button {
+    height: 30px;
+  }
+
+  .mint-area {
+    gap: 20px;
+  }
+}

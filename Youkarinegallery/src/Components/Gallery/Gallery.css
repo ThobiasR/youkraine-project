@@ -1,0 +1,95 @@
+.gallery_container {
+  flex: 2.5;
+  padding: 1px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 950px;
+  color: #333;
+}
+
+.image_container {
+  max-height: 400px;
+  max-width: 4000px;
+  background-color: white;
+  margin: 10px;
+}
+
+.nft_iamge {
+  max-height: 350px;
+  width: 100%;
+}
+
+.deatils {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.properties_list {
+  display: flex;
+  gap: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .gallery_container {
+    flex: 1;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .image_container {
+    max-height: 350px;
+  }
+
+  .nft_iamge {
+    width: fit-content;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .image_container {
+    max-height: 300px;
+  }
+
+  .gallery_container {
+    font-size: 10px;
+  }
+
+  .nft_iamge {
+    width: fit-content;
+    height: 260px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .image_container {
+    max-height: 250px;
+  }
+
+  .gallery_container {
+    font-size: 8px;
+  }
+
+  .nft_iamge {
+    width: fit-content;
+    height: 220px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .image_container {
+    max-height: 230px;
+  }
+
+  .nft_iamge {
+    width: fit-content;
+    height: 190px;
+    width: 100%;
+  }
+}

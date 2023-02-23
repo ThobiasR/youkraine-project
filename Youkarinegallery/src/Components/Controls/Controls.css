@@ -1,0 +1,57 @@
+.controls_container {
+  flex: 1;
+  height: 200px;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.filter {
+  width: 100%;
+}
+
+.attribute {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 13px;
+}
+
+.attribute_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.attibute_button {
+  margin: 10px;
+  border-radius: 24px;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px rgb(0, 119, 255) solid;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.short {
+  max-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.active {
+  background-color: rgb(0, 119, 255);
+}
+
+@media only screen and (max-width: 650px) {
+  .controls_container {
+    font-size: 12px;
+    flex: 0.7;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .controls_container {
+    font-size: 9px;
+  }
+}

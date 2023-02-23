@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 30px;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-image {
+  max-height: 40px;
+}
+
+.connect-wallet {
+  background-color: transparent;
+  border: 1px solid #2081e2;
+  color: white;
+  height: 40px;
+  min-width: 150px;
+  border-radius: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-wallet:hover {
+  background-color: #2081e2;
+}
+
+@media only screen and (max-width: 500px) {
+  .connect-wallet {
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .logo-image {
+    max-height: 30px;
+  }
+}
